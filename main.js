@@ -44,7 +44,7 @@ let form = document.querySelector("form");
 let regexName = /^[a-zæøåA-ZÆØÅ\s\-]{2,}$/;
 let regexPhone = /^[\d]{8,8}$/;
 let regexMail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
-// let regexPass = / /;
+let regexPass = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\S])[a-zA-Z0-9\S]{8,}$/;
 
 // valider fornavn
 if(regexName.test(form.name.value)){
